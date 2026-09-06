@@ -1,7 +1,7 @@
-name: Test wf3
+name: Test PR wf
 
 on:
-  push:
+  pull_request:
 
 jobs:
   deploy_job:
