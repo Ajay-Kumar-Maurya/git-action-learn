@@ -1,4 +1,4 @@
-name: Deploy to training
+name: Deploy to training (non-default)
 
 on:
   push:
