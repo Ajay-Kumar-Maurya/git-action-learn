@@ -1,4 +1,4 @@
-name: Deploy to curr branch
+name: Deploy to my curr branch
 
 on:
   workflow_dispatch:
