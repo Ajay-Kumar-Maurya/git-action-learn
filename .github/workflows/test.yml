@@ -1,4 +1,4 @@
-name: Deploy to training
+name: Deploy to training (my-test-b)
 
 on:
   push:
@@ -7,6 +7,14 @@ on:
 jobs:
   deploy_job:
     name: deploy to staging
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "🎉 Yes, The job was triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+
+  deploy_self-hosted_job:
+    name: deploy to staging-2
     runs-on: ubuntu-22.04
     steps:
       - run: echo "🎉 The job was triggered by a ${{ github.event_name }} event."
