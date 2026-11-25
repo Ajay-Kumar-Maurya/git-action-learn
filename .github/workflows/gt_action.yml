@@ -1,0 +1,15 @@
+name: Git Test
+
+on:
+  push:
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    env:
+      xyz: "hello"
+    steps:
+      - name: read env using dollar
+        run: echo "dollar value is: $xyz"
+      - name: read env using env scope
+        run: echo "str value is ${{env.xyz}}"
